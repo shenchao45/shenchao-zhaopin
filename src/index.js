@@ -8,7 +8,7 @@ import {BrowserRouter,Route,Link,Redirect,Switch} from 'react-router-dom'
 import Auth from './Auth'
 import Dashboard from './Dashboard'
 import reducers from './reducer'
-import {counter} from "./index.redux";
+import './config'
 
 const store = createStore(reducers,compose(
     applyMiddleware(thunk),

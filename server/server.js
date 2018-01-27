@@ -22,7 +22,7 @@ User.create({
     }
 })
 app.get('/data',function (req, res) {
-    User.find({},function (err, doc) {
+    User.findOne({},function (err, doc) {
         if(err) throw err
         res.json(doc)
     })
